@@ -148,14 +148,14 @@ const CreatePost = () => {
         <input
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder="Title (optional)"
+          placeholder="Title (optional field)"
           className="w-full p-3 rounded-xl bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
 
         <textarea
           value={body}
           onChange={(e) => setBody(e.target.value)}
-          placeholder="Write your testimony..."
+          placeholder="What's your encounter..."
           rows={6}
           className="w-full p-3 rounded-xl bg-white/10 border border-white/20 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />

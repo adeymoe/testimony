@@ -80,7 +80,7 @@ const TestimonyCard = ({ post }) => {
   }
 
   return (
-    <div className="bg-white/5 backdrop-blur-md border border-white/10 shadow-lg p-4 rounded-xl text-white">
+    <div className="relative bg-white/5 backdrop-blur-md border border-white/10 shadow-lg p-4 rounded-xl text-white">
       {/* Author */}
       <div className="flex items-center gap-3 mb-2 cursor-pointer" onClick={goToProfile}>
         <img src={testimony.user.avatar} alt="avatar" className="w-10 h-10 rounded-full object-cover" />
@@ -92,7 +92,7 @@ const TestimonyCard = ({ post }) => {
 
       {/* Religion */}
       {testimony.religion && (
-        <div className="absolute top-3 right-3 text-xs text-white bg-purple-600/20 px-2 py-1 rounded-full flex items-center gap-1">
+        <div className="absolute top-3 right-3 text-[11px] sm:text-xs text-white bg-purple-600/20 px-2 py-1 rounded-full flex items-center gap-1">
           <span className="text-purple-400 text-[10px]">🔘</span>
           <span className="capitalize">{testimony.religion}</span>
         </div>
